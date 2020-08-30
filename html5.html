@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<title>HTML Tutorials</title>
+	<style type="text/css">
+		body{
+			margin:0px;
+			font-size: 20px;
+			background-image: url(background.png);
+			background-size: 600px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+		}
+		h2{
+			font-family: 'Dancing Script',sans-serif;
+		}
+		header{
+			display:flex;
+			height:80px;
+			position:relative;
+			background-color: #0BBAC2;
+			align-items: center;
+		}
+		.pre{
+            background-color: #f1f1f1;
+            border-radius: 50%;
+            padding:10px 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-left:1%;
+            margin-right: 86%;
+          }
+          .next{
+            background-color: gray;
+            border-radius: 50%;
+            padding:10px 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-left:5%;
+          }
+          .pre:hover{
+            background-color: lightgreen;
+          }
+          .next:hover{
+            background-color:lightgreen;
+          }
+		.content{
+			margin:30px;
+			font-family:sans-serif;
+		}
+		footer{
+			padding-top: 1px;
+			background-color:lightgray;
+			font-size: 20px;
+			text-align:center;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<img src="unnamed.jpg" style="margin-left:20px; width:60px; height:60px;">
+			<p style="color:white;font-size:30px;padding-right:20px;padding-left: 5px;">IIIT BHubaneswar</p>
+			<div style="margin-left:100px;font-size: 50px;"><p><b>HTML Tutorial</b></p></div>
+		</header>
+		<div class="content">
+			<h1>HTML form </h1>
+
+       <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+       </p>
+
+       <p>This is how it will look like in a browser:</p>
+       <p>
+        First name:<br> <input type="text"><br>
+        Last name:<br> <input type="text">
+      </p>
+
+      <a href="form.html"> CLick here to see example</a>
+
+      <h1>The form element</h1>
+      <p>The HTML form element is used to create an HTML form for user input:
+        The form element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+      </p>
+
+      <img src="form.png" alt="">
+			<h2>HTML Form Attributes</h2>
+        <p>An HTML &lt;form&gt; element, with all possible attributes set, will look like
+        this:</p>
+        <div class="example">
+         <h2 class="example">Example</h2>
+         <div class="example_code notranslate htmlHigh">
+           &lt;form action="action_page.php" method="GET" target="_blank"
+           accept-charset="UTF-8"<br>enctype="application/x-www-form-urlencoded"
+           autocomplete="off" novalidate&gt;<br>.<br>
+           <i>form elements</i><br>
+           .<br>
+           &lt;/form&gt;
+         </div>
+       </div>
+       <p>Here is the list of &lt;form&gt; attributes:</p>
+
+       <table class="reference">
+         <tr>
+          <th>Attribute</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>accept-charset</td>
+          <td>Specifies the charset used in the submitted form (default: the page
+          charset).</td>
+        </tr>
+        <tr>
+          <td>action</td>
+          <td>Specifies an address (url) where to submit the form (default: the
+          submitting page).</td>
+        </tr>
+        <tr>
+          <td>autocomplete</td>
+          <td>Specifies if the browser should autocomplete the form (default: on).</td>
+        </tr>
+        <tr>
+          <td>enctype</td>
+          <td>Specifies the encoding of the submitted data (default: is url-encoded).</td>
+        </tr>
+        <tr>
+          <td>method</td>
+          <td>Specifies the HTTP method used when submitting the form (default: GET).</td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td>Specifies a name used to identify the form (for DOM usage:
+          document.forms.name).</td>
+        </tr>
+        <tr>
+          <td>novalidate</td>
+          <td>Specifies that the browser should not validate the form.</td>
+        </tr>
+        <tr>
+          <td>target</td>
+          <td>Specifies the target of the address in the action attribute (default:
+          _self).</td>
+        </tr>
+      </table>
+      <h2>The Action Attribute</h2>
+       <p>The <strong>action attribute</strong> defines the action to be performed when
+       the form is submitted.</p>
+       <p>The common way to submit a form to a server, is by using a submit button.</p>
+       <p>Normally, the form is submitted to a web page on a web server.</p>
+
+       <p>In the example above, a server-side script is specified to handle the
+       submitted form:</p>
+
+
+       <div class="example">
+        <div class="example_code notranslate htmlHigh">
+
+         &lt;form <strong>action="action_page.php</strong>"&gt;<br>
+       </div></div>
+       <p>If the action attribute is omitted, the action is set to the current page.</p>
+
+       <hr>
+       <h2>The Method Attribute</h2>
+       <p>The <strong>method attribute</strong> specifies the HTTP method (<strong>GET</strong>
+        or <strong>POST</strong>) to be used when submitting the forms:</p>
+
+        <div class="example">
+          <div class="example_code notranslate htmlHigh">
+
+           &lt;form action="action_page.php" <strong>method="GET"</strong>&gt;</div>
+         </div>
+         <p>or:</p>
+
+         <div class="example">
+          <div class="example_code notranslate htmlHigh">
+
+           &lt;form action="action_page.php" <strong>method="POST"</strong>&gt;</div>
+         </div>
+         <hr>
+         <h2>When to Use GET?</h2>
+         <p>You can use GET (the default method):</p>
+         <p>If the form submission is passive (like a search engine query), and without
+         sensitive information.</p>
+         <p>When you use GET, the form data will be visible in the page address:</p>
+
+         <div class="example">
+          <div class="example_code notranslate htmlHigh">
+
+          action_page.php?firstname=Mickey&amp;lastname=Mouse</div></div>
+
+          <hr>
+          <h2>When to Use POST?</h2>
+          <p>You should use POST:</p>
+          <p>If the form is updating data, or includes sensitive information (password).</p>
+          <p>POST offers better security because the submitted data is not visible in the
+          page address.</p>
+
+          <hr>
+          <h2>The Name Attribute</h2>
+          <p>
+          To be submitted correctly, each input field must have a name attribute.</p>
+          <p>
+            This example will
+            only submit the &quot;Last name&quot; input field:
+          </p>
+
+          <div class="example">
+            <h2 class="example">Example</h2>
+            <div class="example_code notranslate htmlHigh">
+             &lt;form action="action_page.php"&gt;<br>First name:&lt;br&gt;<br>&lt;input type="text"
+             value="Mickey"&gt;<br>&lt;br&gt;<br>Last name:&lt;br&gt;<br>&lt;input
+             type="text" name="lastname" value="Mouse"&gt;<br>
+             &lt;br&gt;&lt;br&gt;<br>&lt;input type="submit" value="Submit"&gt;<br>&lt;/form&gt;
+           </div>
+           <br>
+
+         </div>
+		</div>
+		<a href="html4.html" class="pre">&lt;</a>
+        <a href="html7.html" class="next">&gt;</a>
+        <br><br>
+	<footer>
+		<p>Submitted By:Siddharth(B418052) , Sambit(B218035) and Abhishek(B418003).</p>
+	</footer>
+</body>

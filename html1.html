@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<title>HTML Tutorials</title>
+	<style type="text/css">
+		body{
+			margin:0px;
+			font-size: 20px;
+			background-image: url(background.png);
+			background-size: 600px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+		}
+		h2{
+			font-family: 'Dancing Script',sans-serif;
+		}
+		header{
+			display:flex;
+			height:80px;
+			position:relative;
+			background-color: #0BBAC2;
+			align-items: center;
+		}
+		.content{
+			margin:30px;
+			font-family:sans-serif;
+		}
+    .pre{
+            background-color: #f1f1f1;
+            border-radius: 50%;
+            padding:10px 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-left:1%;
+            margin-right: 86%;
+          }
+          .next{
+            background-color: gray;
+            border-radius: 50%;
+            padding:10px 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-left:5%;
+          }
+          .pre:hover{
+            background-color: lightgreen;
+          }
+          .next:hover{
+            background-color:lightgreen;
+          }
+		footer{
+			padding-top: 1px;
+			background-color:lightgray;
+			font-size: 20px;
+			text-align:center;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<img src="unnamed.jpg" style="margin-left:20px; width:60px; height:60px;">
+			<p style="color:white;font-size:30px;padding-right:20px;padding-left: 5px;">IIIT BHubaneswar</p>
+			<div style="margin-left:100px;font-size: 50px;"><p><b>HTML Tutorial</b></p></div>
+		</header>
+		<div class="content">
+			<h1>Tables</h1>
+
+            <p>are made up of cells arranged into rows and columns</p>
+
+
+            <p>	<h2><u>Table Tags</u></h2>
+              &lt;table&gt;...&lt;/table&gt;
+              <ul>
+                <li> Defines the begining and end of a table</li>
+                <li>can have several attributes:-</li>
+                <ul>
+                 <li> bgcolor=#rrggbb or color name</li>
+                 <li>rules =  all|cols|rows|none</li>
+                 <li>border = number</li>
+                 <li>height = number|percentage</li>
+
+               </ul>
+
+             </ul>
+             &lt;tr&gt;...&lt;/tr&gt;
+             <ul>
+              <li> Defines  a row of cells within a table</li>
+              <li>can have several attributes:-</li>
+              <ul>
+               <li> bgcolor=#rrggbb or color name</li>
+               <li>align =  left|center|right|justify</li>
+             </ul>
+
+           </ul>
+
+           &lt;caption&gt;...&lt;/caption&gt;
+           <ul>
+            <li> Provides a caption for the table</li>
+            <li>Must immediately follow the "table" tag and precede all other tags.</li>
+
+
+          </ul>
+
+          &lt;td&gt;...&lt;/td&gt;
+          <ul>
+           <li> Defines  a cell within a table</li>
+           <li>A table cell can contain any content, like an image, or even another table</li>
+           <li>can have several attributes:-</li>
+           <ul>
+            <li> bgcolor=#rrggbb or color name</li>
+            <li>colspan =  number (Defines the nunber of columns each cell of the table can span:default is 1)</li>
+            <li>rowspan =  number</li>
+
+          </ul>
+
+        </ul>
+
+        &lt;th&gt;...&lt;/th&gt;
+        <ul>
+          <li> Defines  a table header cell</li>
+          <li>Browsers generally display the contents of the header cells in bold, and centered</li>
+          <li>It has sane attributes as &lt;td&gt; tag</li>
+
+
+        </ul>
+        <h3>Examples:-</h3>
+        <pre>
+          &lt;HTML&gt;
+          &lt;HEAD&gt;
+          &lt;TITLE&gt;
+          Tables
+          &lt;/TITLE&gt;
+          &lt;/HEAD&gt;
+          &lt;BODY&gt;
+
+          &lt;table rules=all border=2&gt;
+          &lt;tr&gt;
+          &lt;td colspan=2&gt;Hello &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+          &lt;td&gt;Good&lt;/td&gt;&lt;td&gt;Day&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;/table&gt;
+
+          &lt;/BODY&gt;
+          &lt;/HTML&gt;
+        </pre>
+        <h2>Table Header, Body, and Footer</h2>
+            <p>Tables can be divided into three portions: a header, a body, and a foot. The head and foot are rather similar to headers and footers in a word-processed document that remain the same for every page, while the body is the main content holder of the table.</p>
+            <p>The three elements for separating the head, body, and foot of a table are:</p>
+            <ul class="list">
+              <li><b>&lt;thead&gt; - </b>to create a separate table header.</li>
+              <li><b>&lt;tbody&gt; - </b>to indicate the main body of the table.</li>
+              <li><b>&lt;tfoot&gt; - </b>to create a separate table footer.</li>
+            </ul>
+            <p>A table may contain several &lt;tbody&gt; elements to indicate different <i>pages</i> or groups of data. But it is notable that &lt;thead&gt; and &lt;tfoot&gt; tags should appear before &lt;tbody&gt;</p>
+            <h3>Example</h3>
+            <pre class="prettyprint notranslate tryit">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+              &lt;head&gt;
+              &lt;title&gt;HTML Table&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+              &lt;table border="1" width="100%"&gt;
+              &lt;thead&gt;
+              &lt;tr&gt;
+              &lt;td colspan="4"&gt;This is the head of the table&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tfoot&gt;
+              &lt;tr&gt;
+              &lt;td colspan="4"&gt;This is the foot of the table&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;/tfoot&gt;
+              &lt;tbody&gt;
+              &lt;tr&gt;
+              &lt;td&gt;Cell 1&lt;/td&gt;
+              &lt;td&gt;Cell 2&lt;/td&gt;
+              &lt;td&gt;Cell 3&lt;/td&gt;
+              &lt;td&gt;Cell 4&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;/tbody&gt;
+              &lt;/table&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </pre>
+            <p>This will produce following result:</p>
+            <div class="result notranslate">
+              <table border="1" width="100%" style="border-collapse: separate;border-spacing: 1px;">
+                <thead>
+                  <tr>
+                    <td colspan="4">This is the head of the table</td>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <td colspan="4">This is the foot of the table</td>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+	</div>
+  <a href="html12.html" class="pre">&lt;</a>
+  <a href="html4.html" class="next">&gt;</a>      
+  <br><br>
+	<footer>
+		<p>Submitted By:Siddharth(B418052) , Sambit(B218035) and Abhishek(B418003).</p>
+	</footer>
+</body>

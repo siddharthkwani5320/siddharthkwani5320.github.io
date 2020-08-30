@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<title>HTML Tutorials</title>
+	<style type="text/css">
+		body{
+			margin:0px;
+			font-size: 20px;
+			background-image: url(background.png);
+			background-size: 600px;
+			background-repeat: no-repeat;
+			line-height: 30px;
+			background-position: center;
+			background-attachment: fixed;
+		}
+		h2{
+			font-family: 'Dancing Script',sans-serif;
+		}
+		header{
+			display:flex;
+			height:80px;
+			position:relative;
+			background-color: #0BBAC2;
+			align-items: center;
+		}
+		.pre{
+            background-color: #f1f1f1;
+            border-radius: 50%;
+            padding:10px 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-left:1%;
+            margin-right: 86%;
+          }
+          .next{
+            background-color: gray;
+            border-radius: 50%;
+            padding:10px 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-left:5%;
+          }
+          .pre:hover{
+            background-color: lightgreen;
+          }
+          .next:hover{
+            background-color:lightgreen;
+          }
+		.content{
+			margin:30px;
+			font-family:sans-serif;
+		}
+		footer{
+			padding-top: 1px;
+			background-color:lightgray;
+			font-size: 20px;
+			text-align:center;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<img src="unnamed.jpg" style="margin-left:20px; width:60px; height:60px;">
+			<p style="color:white;font-size:30px;padding-right:20px;padding-left: 5px;">IIIT BHubaneswar</p>
+			<div style="margin-left:100px;font-size: 50px;"><p><b>HTML Tutorial</b></p></div>
+		</header>
+		<div class="content">
+			<h2>HTML Image Tag</h2>
+
+            <p>
+              The img tag is used to embed an image in an HTML page.
+
+              Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+              The img tag has two required attributes:
+              <ul>
+                <li>src - Specifies the path to the image</li>
+                <li>alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed</li>
+              </ul>
+              Example 1:Image 1<br>
+              &lt;img scr="image1.jpeg" alt="Exo Band Image"&gt;
+              <br>
+              <img src="image1.jpeg" alt="EXO Band Image"><br>
+              Example 2:Image 2<br>
+              &lt;img scr="image2.jpeg" alt="Exo Band Image"&gt;<br>
+              <img src="image2.jpeg" alt="EXO Band Image"><br>
+              Example 3:Image 3 Does Not Exist<br>
+              &lt;img scr="image1.jpeg" alt="Exo Band Image"&gt;<br>
+              <img src="image3.jpeg" alt="EXO Band Image">
+              
+            </p>
+		</div>
+		<a href="html6.html" class="pre">&lt;</a>
+        <a href="html12.html" class="next">&gt;</a>
+        <br><br>
+	<footer>
+		<p>Submitted By:Siddharth(B418052) , Sambit(B218035) and Abhishek(B418003).</p>
+	</footer>
+</body>

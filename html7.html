@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<title>HTML Tutorials</title>
+	<style type="text/css">
+		body{
+			margin:0px;
+			font-size: 20px;
+			background-image: url(background.png);
+			background-size: 600px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+		}
+		h2{
+			font-family: 'Dancing Script',sans-serif;
+		}
+		header{
+			display:flex;
+			height:80px;
+			position:relative;
+			background-color: #0BBAC2;
+			align-items: center;
+		}
+		.pre{
+            background-color: #f1f1f1;
+            border-radius: 50%;
+            padding:10px 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-left:1%;
+            margin-right: 86%;
+          }
+          .next{
+            background-color: gray;
+            border-radius: 50%;
+            padding:10px 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-left:5%;
+          }
+          .pre:hover{
+            background-color: lightgreen;
+          }
+          .next:hover{
+            background-color:lightgreen;
+          }
+		.content{
+			margin:30px;
+			font-family:sans-serif;
+		}
+		footer{
+			padding-top: 1px;
+			background-color:lightgray;
+			font-size: 20px;
+			text-align:center;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<img src="unnamed.jpg" style="margin-left:20px; width:60px; height:60px;">
+			<p style="color:white;font-size:30px;padding-right:20px;padding-left: 5px;">IIIT BHubaneswar</p>
+			<div style="margin-left:100px;font-size: 50px;"><p><b>HTML Tutorial</b></p></div>
+		</header>
+		<div class="content">
+			<h2>Grouping Form Data with &lt;fieldset&gt;</h2>
+         <p>The <strong>&lt;fieldset&gt;</strong> element groups related data in a form.</p>
+         <p>The <strong>&lt;legend&gt;</strong> element defines a caption for the &lt;fieldset&gt;
+         element.</p>
+         <div class="example">
+           <h2 class="example">Example</h2>
+           <div class="example_code notranslate htmlHigh">
+             &lt;form action="action_page.php"&gt;<br>&lt;fieldset&gt;<br>&lt;legend&gt;Personal
+             information:&lt;/legend&gt;<br>First name:&lt;br&gt;<br>&lt;input type="text" name="firstname"
+             value="Mickey"&gt;<br>&lt;br&gt;<br>Last name:&lt;br&gt;<br>
+             &lt;input type="text" name="lastname" value="Mouse"&gt;<br>&lt;br&gt;&lt;br&gt;<br>
+             &lt;input type="submit" value="Submit"&gt;&lt;/fieldset&gt;<br>
+             &lt;/form&gt;
+           </div>
+           <br>
+
+         </div>
+
+         <p>This is how the HTML code above will be displayed in a browser:</p>
+         <form action="action_page.php" target="_blank">
+          <fieldset>
+            <legend>Personal information:</legend>
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+
+		</div>
+		<a href="html5.html" class="pre">&lt;</a>
+        <a href="html14.html" class="next">&gt;</a>
+        <br><br>
+	<footer>
+		<p>Submitted By:Siddharth(B418052) , Sambit(B218035) and Abhishek(B418003).</p>
+	</footer>
+</body>
