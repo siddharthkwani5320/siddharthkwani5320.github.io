@@ -1,0 +1,350 @@
+html {
+    height: 100%;
+    background-image: linear-gradient(to right top, #8e88ad 0%, #3498db 100%);
+}
+
+body {
+    margin-top: 100px;
+    padding: 0;
+    font-family: Quicksand;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+nav.black {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100px;
+    padding: 10px 100px;
+}
+
+nav .logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+nav .logo:hover {
+    color: white;
+    list-style: none;
+}
+
+nav.black .logo {
+    color: #fff;
+}
+
+nav.black .logo:hover {
+    color: #ffd9aa;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #151515;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+    list-style: none;
+}
+
+nav.black ul li a {
+    color: #fff;
+}
+
+nav.black ul li a:hover {
+    color: #ffd9aa;
+}
+
+nav ul li a:focus {
+    outline: none;
+}
+
+nav ul li a.active {
+    background: #2b5775;
+    color: #ffff;
+    border-radius: 6px;
+}
+
+nav ul li a.active:hover {
+    color: black;
+    background: white;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 420%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.question {
+    background: #2b5775;
+    text-align: justify;
+    font-size: 25px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.25);
+    font-weight: 50;
+    width: 83%;
+    height: 112px;
+}
+
+.buttons {
+    text-align: center;
+    padding: 0px;
+    size: 50%;
+    font-size: 110px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/*
+  .answer
+  {
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 20px;
+  } */
+
+.answer {
+    width: 270px;
+    height: 100px;
+    padding: 15px 25px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    background-color: #E8E8E8;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+
+/* .defaultAnswerColour
+  {
+    color: black;
+  } */
+
+.answer:not(.nohover):hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+.navButtons {
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+
+.score {
+    padding-top: 25px;
+}
+
+.score,
+.quesitonNum {
+    text-align: right;
+    padding-right: 30%;
+    font-size: 20px;
+}
+
+.starDesign {
+    position: absolute;
+    left: 18%;
+    top: 40%;
+}
+
+.finalScore {
+    font-size: 150px;
+    font-family: Roboto, sans-serif;
+    top: 45%;
+    left: 42%;
+    position: absolute;
+}
+
+
+/* .replayButton
+  {
+  position: absolute; left: 60%; top: 68%; margin: -<half height of image> 0 0 -<half width of image>;
+  cursor: pointer;
+  } */
+
+#q4Image {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    height: 200px;
+    border: 1px solid #021a40;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+#q16Image {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #021a40;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+.nextQuestion {
+    top: 42%;
+    right: 7%;
+}
+
+.previousQuestion {
+    top: 42%;
+    left: 7%;
+}
+
+.replayButton {
+    top: 84.5%;
+    right: 7%;
+}
+
+.button {
+    position: absolute;
+    display: inline-block;
+    margin: 0 auto;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 3px rgba(128, 128, 128, 1), /* gradient effects */
+    0px 4px rgba(118, 118, 118, 1), 0px 5px rgba(108, 108, 108, 1), 0px 6px rgba(98, 98, 98, 1), 0px 7px rgba(88, 88, 88, 1), 0px 8px rgba(78, 78, 78, 1), 0px 14px 6px -1px rgba(128, 128, 128, 1);
+    /* shadow */
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+}
+
+.button span {
+    background-color: #E8E8E8;
+    width: 100px;
+    text-align: center;
+    background-image: -webkit-box-shadow: 0px -1px #fff, /* top highlight */
+    0px 1px 1px #FFFFFF;
+    /* bottom edge */
+    -webkit-background-size: 100%, 100%, 100%, 4px 4px;
+    -webkit-border-radius: 10px;
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    color: #2b5775;
+    text-transform: uppercase;
+    font-family: 'TradeGothicLTStd-BdCn20', 'PT Sans Narrow';
+    font-weight: 700;
+    font-size: 32px;
+    text-shadow: 0px 1px #fff, 0px -1px #262F33;
+}
+
+.button span:hover {
+    color: #ffd9aa;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:active {
+    -webkit-box-shadow: 0px 3px rgba(128, 128, 128, 1), 0px 4px rgba(118, 118, 118, 1), 0px 5px rgba(108, 108, 108, 1), 0px 6px rgba(98, 98, 98, 1), 0px 7px rgba(88, 88, 88, 1), 0px 8px rgba(78, 78, 78, 1), 0px 10px 2px 0px rgba(128, 128, 128, .6);
+    /* shadow */
+}
+
+.button:active span {
+    -webkit-transform: translate(0, 5px);
+    /* depth of button press */
+}
+
+#replayButton.button span:after {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    font-family: 'Cabin';
+    font-weight: 700;
+    color: #2b5775;
+    text-shadow: 0px 1px #fff, 0px -1px black;
+    font-size: 26px;
+}
+
+#nextButtonID.button span:after {
+    content: ">";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    font-family: 'Cabin';
+    font-weight: 700;
+    color: #2b5775;
+    text-shadow: 0px 1px #fff, 0px -1px black;
+    font-size: 26px;
+}
+
+#previousButtonID.button span:after {
+    content: "<";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    font-family: 'Cabin';
+    font-weight: 700;
+    color: #2b5775;
+    text-shadow: 0px 1px #fff, 0px -1px black;
+    font-size: 26px;
+}
+
+
+/* .rightAnswerSelected
+  {
+    color: #7c7c7d;
+  } */
+
+
+/*--- Media Queries --*/
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {}
